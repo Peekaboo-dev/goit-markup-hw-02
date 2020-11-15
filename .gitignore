@@ -1,4 +1,5 @@
 .prettierrc.json
+scss/
 # Logs
 logs
 *.log
