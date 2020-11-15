@@ -87,3 +87,10 @@ h6 {
 }
 
 /*--------------------------*/
+:root {
+  --accent-color: #2196f3;
+}
+
+.accent {
+  color: var(--accent-color);
+}
