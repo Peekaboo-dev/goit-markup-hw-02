@@ -1,7 +1,62 @@
 :root {
+  --primary-background-color: #ffffff;
+  --primary-font-color: #000000;
+  --secondary-font-color: #757575;
   --accent-color: #2196f3;
 }
 
-.accent {
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--primary-background-color);
+  color: var(--primary-font-color);
+}
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.header a {
+  color: var(--primary-font-color);
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.header__items :hover {
+  color: var(--accent-color);
+}
+
+.header__link a {
+  color: var(--secondary-font-color);
+}
+
+.header__link :hover {
   color: var(--accent-color);
 }
