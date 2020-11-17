@@ -4,6 +4,7 @@
   --primary-background-color: #ffffff;
   --primary-font-color: #000000;
   --secondary-background-color: #2f303a;
+  --secondary-background-color-gray: #f5f4fa;
   --secondary-font-color: #757575;
   --secondary-font-color-white: #ffffff;
   --secondary-font-color-black: #212121;
@@ -155,6 +156,10 @@ body h2 {
 }
 
 /* ? Наша команда*/
+.team__content {
+  background-color: var(--secondary-background-color-gray);
+}
+
 .team__content h3 {
   font-weight: 500;
   font-size: 16px;
