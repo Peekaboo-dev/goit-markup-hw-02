@@ -1,8 +1,30 @@
+@charset "UTF-8";
+/* ! Основные цвета*/
 :root {
   --primary-background-color: #ffffff;
   --primary-font-color: #000000;
+  --secondary-background-color: #2f303a;
   --secondary-font-color: #757575;
+  --secondary-font-color-white: #ffffff;
+  --secondary-font-color-black: #212121;
   --accent-color: #2196f3;
+}
+
+/* ! Отключение стилей браузера*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
 }
 
 a,
@@ -14,6 +36,10 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul li {
   list-style: none;
 }
@@ -22,22 +48,43 @@ address {
   font-style: normal;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* TODO Основные стили сайта*/
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--primary-background-color);
   color: var(--primary-font-color);
 }
 
-.header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.header a {
+body a {
   color: var(--primary-font-color);
 }
 
+body h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+/* TODO Логотип*/
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -49,7 +96,15 @@ body {
   color: var(--accent-color);
 }
 
-.header__items :hover {
+/* TODO Шапка */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.header__items :hover,
+.header__items :focus {
   color: var(--accent-color);
 }
 
@@ -57,6 +112,89 @@ body {
   color: var(--secondary-font-color);
 }
 
-.header__link :hover {
+.header__link :hover,
+.header__link :focus {
   color: var(--accent-color);
+}
+
+/* TODO Основной контент первой страницы*/
+/* ? Герой*/
+.hero {
+  background-color: var(--secondary-background-color);
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--secondary-font-color-white);
+  text-align: center;
+}
+
+.hero__btn {
+  background-color: var(--accent-color);
+  color: var(--secondary-font-color-white);
+}
+
+/* ? Наши особенности*/
+.features__content h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.features__content p {
+  line-height: 1.7;
+  color: var(--secondary-font-color);
+}
+
+/* ? Чем мы занимаемся*/
+.works__title {
+  text-align: center;
+}
+
+/* ? Наша команда*/
+.team__content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team__content p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-font-color);
+}
+
+.team__title {
+  text-align: center;
+}
+
+.team__list li {
+  text-align: center;
+}
+
+/* TODO Подвал*/
+.footer {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-font-color-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer__link li > a {
+  color: var(--secondary-font-color-white);
+  opacity: 0.6;
+}
+
+.footer__link a:hover,
+.footer__link :focus {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.secondary-logo {
+  color: var(--secondary-font-color-white);
 }
