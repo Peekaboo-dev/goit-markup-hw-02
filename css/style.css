@@ -2,12 +2,12 @@
 /* ! Основные цвета*/
 :root {
   --primary-background-color: #ffffff;
-  --primary-font-color: #000000;
+  --primary-font-color: #212121;
+  --secondary-button-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --secondary-background-color-gray: #f5f4fa;
   --secondary-font-color: #757575;
   --secondary-font-color-white: #ffffff;
-  --secondary-font-color-black: #212121;
   --accent-color: #2196f3;
 }
 
@@ -85,6 +85,10 @@ body h2 {
   line-height: 1.2;
 }
 
+body button {
+  font-family: Roboto, sans-serif;
+}
+
 /* TODO Логотип*/
 .logo {
   font-family: Raleway;
@@ -100,7 +104,6 @@ body h2 {
 /* TODO Шапка */
 .header {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
 }
 
@@ -118,7 +121,7 @@ body h2 {
   color: var(--accent-color);
 }
 
-/* TODO Основной контент первой страницы*/
+/* TODO main главная*/
 /* ? Герой*/
 .hero {
   background-color: var(--secondary-background-color);
@@ -133,8 +136,18 @@ body h2 {
 }
 
 .hero__btn {
-  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  color: var(--primary-font-color);
+  background-color: var(--secondary-background-color-gray);
+}
+
+.hero button:hover,
+.hero :focus {
   color: var(--secondary-font-color-white);
+  background-color: var(--accent-color);
 }
 
 /* ? Наши особенности*/
@@ -180,12 +193,45 @@ body h2 {
   text-align: center;
 }
 
+/* TODO main портфолио*/
+/* ? Кнопки */
+.search__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--primary-font-color);
+  background-color: var(--secondary-background-color-gray);
+}
+
+.search button:hover,
+.search :focus {
+  color: var(--secondary-font-color-white);
+  background-color: var(--accent-color);
+}
+
+/* ? портфолио*/
+.menu__link {
+  text-align: center;
+}
+
+.menu__link h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.menu__link p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--secondary-font-color);
+}
+
 /* TODO Подвал*/
 .footer {
   background-color: var(--secondary-background-color);
   color: var(--secondary-font-color-white);
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.2;
 }
 
